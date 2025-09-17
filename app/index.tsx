@@ -66,13 +66,6 @@ export default function Index() {
             {message}
           </Text>
         ) : null}
-
-        {/* <TouchableOpacity
-          className='bg-green-700 py-3 px-6 mt-5 rounded-lg items-center justify-center'
-          onPress={() => alert('Tombok Custom ditekan!')}
-        >
-          <Text className='text-white text-base font-bold'>Button</Text>
-        </TouchableOpacity> */}
       </View>
     </ScrollView>
   );
