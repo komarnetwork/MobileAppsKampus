@@ -24,7 +24,7 @@ const TugasScreen = () => {
       <View className='w-full p-5'>
         <Pressable
           onPress={() => router.push('../modul')}
-          className='bg-blue-500 shadow shadow-slate-400 rounded-xl p-3 w-full mt-4'
+          className='bg-green-600 shadow shadow-slate-400 rounded-xl p-3 w-full mt-4'
         >
           <Text className='text-white text-center'>Back to Modul</Text>
         </Pressable>
