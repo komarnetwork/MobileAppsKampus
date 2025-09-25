@@ -4,7 +4,7 @@ import { Tabs } from 'expo-router';
 
 const RootLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'green' }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: 'green', headerTitleAlign: 'center' }}>
       <Tabs.Screen
         name='(home)/index'
         options={{
