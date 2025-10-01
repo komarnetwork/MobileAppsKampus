@@ -11,6 +11,12 @@ const IndexModul = () => {
       >
         <Text className='text-white text-center'>Modul 3</Text>
       </Pressable>
+      <Pressable
+        onPress={() => router.push('../modul/modul4')}
+        className='bg-blue-500 shadow shadow-slate-400 rounded-xl p-3 w-50 mt-4'
+      >
+        <Text className='text-white text-center'>Modul 4</Text>
+      </Pressable>
     </View>
   );
 };
