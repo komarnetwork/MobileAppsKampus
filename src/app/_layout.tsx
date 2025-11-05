@@ -22,6 +22,24 @@ const RootLayout = () => {
           tabBarIcon: ({ color, size }) => <Ionicons name='folder' size={size} color={color} />,
         }}
       />
+      <Tabs.Screen
+        name='cart'
+        options={{
+          title: 'Cart',
+          headerShown: false,
+          popToTopOnBlur: true,
+          tabBarIcon: ({ color, size }) => <Ionicons name='cart' size={size} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name='profile'
+        options={{
+          title: 'Profile',
+          headerShown: false,
+          popToTopOnBlur: true,
+          tabBarIcon: ({ color, size }) => <Ionicons name='person-circle' size={size} color={color} />,
+        }}
+      />
     </Tabs>
   );
 };
