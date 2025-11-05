@@ -1,25 +1,45 @@
-import { Image, Pressable, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 const PhotoProfile = require('../../../assets/images/avatarKecil.png');
 
 export default function Index() {
+  const products = [
+    { id: '1', name: 'Product A' },
+    { id: '2', name: 'Product B' },
+    { id: '3', name: 'Product C' },
+  ];
   return (
+    // <View className='flex-1 items-center justify-center p-5'>
+    //   <View className='bg-slate-200 shadow shadow-slate-400 border border-slate-300 rounded-2xl p-5 items-center justify-center'>
+    //     <Image source={PhotoProfile} className='w-44 h-44 rounded-full border border-slate-500' />
+
+    //     <Text className='text-2xl font-semibold text-blue-500 mt-3'>Komarudin</Text>
+    //     <Text className='text-xl font-semibold text-green-500 mb-5'>Prodi: Sistem Informasi</Text>
+    //     <Text className='text-1xl font-semibold text-center text-slate-800 mt-3'>
+    //       Front-End Developer with over 2 years of experience in designing and maintaining responsive web applications
+    //       using Laravel, React.js, Bootstrap, TailwindCSS, and MySQL. Experienced in HTML5, CSS3, JavaScript, PHP,
+    //       Node.js, Express, and Figma for UI/UX design. Skilled in collaborating with cross-functional teams to deliver
+    //       high-quality, user-focused solutions. Experienced in API integration, version control (Git), and agile
+    //       development methodologies.
+    //     </Text>
+
+    //     <Pressable className='bg-blue-500 shadow shadow-slate-400 rounded-xl py-3 px-10 mt-4'>
+    //       <Text className='text-white text-center font-bold'>Contact Me</Text>
+    //     </Pressable>
+    //   </View>
+    // </View>
+
     <View className='flex-1 items-center justify-center p-5'>
-      <View className='bg-slate-200 shadow shadow-slate-400 border border-slate-300 rounded-2xl p-5 items-center justify-center'>
-        <Image source={PhotoProfile} className='w-44 h-44 rounded-full border border-slate-500' />
+      <Text className='text-2xl font-semibold text-blue-500 m-5'>Product List</Text>
 
-        <Text className='text-2xl font-semibold text-blue-500 mt-3'>Komarudin</Text>
-        <Text className='text-xl font-semibold text-green-500 mb-5'>Prodi: Sistem Informasi</Text>
-        <Text className='text-1xl font-semibold text-center text-slate-800 mt-3'>
-          Front-End Developer with over 2 years of experience in designing and maintaining responsive web applications
-          using Laravel, React.js, Bootstrap, TailwindCSS, and MySQL. Experienced in HTML5, CSS3, JavaScript, PHP,
-          Node.js, Express, and Figma for UI/UX design. Skilled in collaborating with cross-functional teams to deliver
-          high-quality, user-focused solutions. Experienced in API integration, version control (Git), and agile
-          development methodologies.
-        </Text>
-
-        <Pressable className='bg-blue-500 shadow shadow-slate-400 rounded-xl py-3 px-10 mt-4'>
-          <Text className='text-white text-center font-bold'>Contact Me</Text>
-        </Pressable>
+      <View className='items-center justify-center'>
+        {products.map((product) => (
+          <Text
+            key={product.id}
+            className='bg-slate-200 shadow shadow-slate-400 border border-slate-300 rounded-2xl p-5 text-xl font-semibold text-green-500 mb-2 m-5'
+          >
+            {product.name}
+          </Text>
+        ))}
       </View>
     </View>
   );
